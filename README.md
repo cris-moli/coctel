@@ -50,6 +50,9 @@ Para realizar el analisis temporal y espectral de las señales se realizo la tra
 
 Al analizar las señales con la Transformada Rápida de Fourier, observamos que la mayor parte de la energía se concentra en frecuencias entre 100 y 1000 Hz, lo que indica que esas son las más relevantes en cada sonido capturado. La densidad espectral nos muestra cómo está distribuida la potencia en las frecuencias, destacando picos en ciertas zonas que corresponden a los sonidos principales de cada fuente. Esto nos ayuda a identificar qué frecuencias predominan en cada señal y a diferenciarlas mejor.
 
+Comparando la señal aislada con la señal obtenida en los microfonos se obtuvo el siguiente SNR
+![image](https://github.com/user-attachments/assets/fa83d085-8bad-4be5-a8f3-a0fa740037a4)  
+
 
 
 
