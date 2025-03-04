@@ -46,6 +46,9 @@ voz_cri = sources[np.argmax(correlations)]
 
 Para realizar el analisis temporal y espectral de las señales se realizo la transformada de fourier y la densidad espectral, obtuvimos lo siguiente
 ![image](https://github.com/user-attachments/assets/be246c67-c8c8-4613-a00a-69a10d125666)
+*analisis temporal y espectral*
+
+Al analizar las señales con la Transformada Rápida de Fourier, observamos que la mayor parte de la energía se concentra en frecuencias entre 100 y 1000 Hz, lo que indica que esas son las más relevantes en cada sonido capturado. La densidad espectral nos muestra cómo está distribuida la potencia en las frecuencias, destacando picos en ciertas zonas que corresponden a los sonidos principales de cada fuente. Esto nos ayuda a identificar qué frecuencias predominan en cada señal y a diferenciarlas mejor.
 
 
 
