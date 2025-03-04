@@ -12,6 +12,10 @@ Podemos decir que ICA intenta separar múltiples señales que han sido mezcladas
 
 
  ![{9636A8FF-1E1A-44F0-98B7-2692BC0D1C35}](https://github.com/user-attachments/assets/74c10c3d-5310-40d1-80ec-72967d3cf53d)
+### ¿Cómo afecta la posición relativa de los micrófonos y las fuentes sonoras en la efectividad de la separación de señales?
+La posición de los micrófonos y las personas es importante para poder separar las voces en el audio, ya que si los micrófonos están muy juntos o en línea con las personas, la señal se mezcla y es mucho más difícil separarlo.
+### ¿Qué mejoras implementa en la metodología para obtener mejoras en el resultado?
+Para mejorar la separación de las voces se podría hacer lo siguiente, colocar los micrófonos en mejores posiciones para captar mejor el sonido y utilizar mejores dispositivos para capturar el sonido.
 
 ## Recomendaciones
 -Python 3.9, pyedflib, matplotlib
