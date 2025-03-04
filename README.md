@@ -13,6 +13,11 @@ Podemos decir que ICA intenta separar múltiples señales que han sido mezcladas
 
  ![{9636A8FF-1E1A-44F0-98B7-2692BC0D1C35}](https://github.com/user-attachments/assets/74c10c3d-5310-40d1-80ec-72967d3cf53d)
 
+## Recomendaciones
+-Python 3.9, pyedflib, matplotlib
+
+## Información de contacto
+-est.paula.vcardenas@unimilitar.edu.co, est.sara.martin@unimilitar.edu.co, est.cristian.cmolina@unimilitar.edu.co
 
 ## Referencias 
 https://pmc.ncbi.nlm.nih.gov/articles/PMC3538438/
