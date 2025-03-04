@@ -13,6 +13,46 @@ Podemos decir que ICA intenta separar múltiples señales que han sido mezcladas
 
 
  ![{9636A8FF-1E1A-44F0-98B7-2692BC0D1C35}](https://github.com/user-attachments/assets/74c10c3d-5310-40d1-80ec-72967d3cf53d)
+
+ ### Procedimiento y resultados 
+Primero se subio cada uno de los audios en formato wav 
+ ```
+files = ["pa.wav", "sa.wav", "cri.wav"]
+signals = []
+sr = None
+```
+Luego se calculo el SNR de cada voz con la siguiente funcion
+ ```
+def calculate_snr(signal, noise):
+    signal_power = np.mean(signal ** 2)
+    noise_power = np.mean(noise ** 2)
+    return 10 * np.log10(signal_power / noise_power)
+```
+![image](https://github.com/user-attachments/assets/9a2e5ad3-7e2c-48f0-af70-bf451b150e02)
+
+Se aislo la voz mas predominante con ICA y se obtuvo la siguiente grafica
+
+![voz_aislada](https://github.com/user-attachments/assets/1dc1f29b-dc61-4348-b10a-f1753f2b130b)
+*Voz aislada*
+
+utilizando la siguiente funcion
+ ```
+# Aplicar FastICA para separar la voz
+ica = FastICA(n_components=3, max_iter=500)
+sources = ica.fit_transform(signals.T).T
+correlations = [np.max(np.abs(correlate(s, signals[0], mode='valid'))) for s in sources]
+voz_cri = sources[np.argmax(correlations)]
+```
+
+Para realizar el analisis temporal y espectral de las señales se realizo la transformada de fourier y la densidad espectral, obtuvimos lo siguiente
+![image](https://github.com/user-attachments/assets/be246c67-c8c8-4613-a00a-69a10d125666)
+
+
+
+
+
+
+
 ### ¿Cómo afecta la posición relativa de los micrófonos y las fuentes sonoras en la efectividad de la separación de señales?
 La posición de los micrófonos y las personas es importante para poder separar las voces en el audio, ya que si los micrófonos están muy juntos o en línea con las personas, la señal se mezcla y es mucho más difícil separarlo.
 ### ¿Qué mejoras implementa en la metodología para obtener mejoras en el resultado?
