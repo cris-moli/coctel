@@ -28,7 +28,8 @@ def calculate_snr(signal, noise):
     noise_power = np.mean(noise ** 2)
     return 10 * np.log10(signal_power / noise_power)
 ```
-![image](https://github.com/user-attachments/assets/9a2e5ad3-7e2c-48f0-af70-bf451b150e02)
+![image](https://github.com/user-attachments/assets/2a7b4c8a-ab9e-4ad2-9c10-c5ca47b2f964)
+
 
 Se aislo la voz mas predominante con ICA y se obtuvo la siguiente grafica
 
