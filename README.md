@@ -1,4 +1,4 @@
-# Coctel
+#  Fiesta de Cóctel
  ## Introducción
 En este trabajo desarrollaremos la práctica de “la fiesta de cóctel”, esta consiste en grabar diferentes conversaciones desde diferentes micrófonos en una reunión, en nuestro caso hicimos uso de la aplicación grabadora de voz desde los celulares, en un cuarto insonoro a una distancia de aproximadamente 2 metros cada uno de los micrófonos que se encontraban en un punto central, esto permitió la captura de tres audios guardados desde tres diferentes celulares de aproximadamente 15 segundos cada audio. 
 ## Tranformada rápida de Fourier
@@ -26,5 +26,7 @@ Para mejorar la separación de las voces se podría hacer lo siguiente, colocar 
 
 ## Referencias 
 https://pmc.ncbi.nlm.nih.gov/articles/PMC3538438/
+https://www.nti-audio.com/es/servicio/conocimientos/transformacion-rapida-de-fourier-fft
+Plaza, DHO (2018). Construcción de un arreglo de altavoces y su aplicación en audio personalizado (beamforming) (Tesis doctoral, Universidad de San Buenaventura Colombia).
 
 
