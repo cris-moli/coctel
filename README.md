@@ -54,19 +54,18 @@ Al analizar las señales con la Transformada Rápida de Fourier, observamos que 
 Comparando la señal aislada con la señal obtenida en los microfonos se obtuvo el siguiente SNR
 ![image](https://github.com/user-attachments/assets/fa83d085-8bad-4be5-a8f3-a0fa740037a4)  
 
-
-
-
-
+El SNR de 61.72 dB significa que la voz separada tiene mucho más nivel que el ruido, o sea, que la separación salió bastante bien. Como el número es alto, quiere decir que casi no quedó ruido mezclado con la voz, lo que hace que se escuche más clara. Mientras mayor sea el SNR, mejor es la calidad de la voz aislada.
 
 
 ### ¿Cómo afecta la posición relativa de los micrófonos y las fuentes sonoras en la efectividad de la separación de señales?
 La posición de los micrófonos y las personas es importante para poder separar las voces en el audio, ya que si los micrófonos están muy juntos o en línea con las personas, la señal se mezcla y es mucho más difícil separarlo.
 ### ¿Qué mejoras implementa en la metodología para obtener mejoras en el resultado?
 Para mejorar la separación de las voces se podría hacer lo siguiente, colocar los micrófonos en mejores posiciones para captar mejor el sonido y utilizar mejores dispositivos para capturar el sonido.
+### Conclusion
+No se pudo aislar bien la voz porque el ruido y la señal original tienen frecuencias parecidas, lo que hace difícil separarlos completamente. Además, el método que usamos (ICA) funciona mejor cuando las fuentes son totalmente independientes, pero en este caso, el ruido y la voz pueden estar mezclados y no se distinguen bien. También influye la posición de los micrófonos, ya que al posicionarnos en linea con el microfono los sonidos se mezclaron.
 
 ## Recomendaciones
--Python 3.9, pyedflib, matplotlib
+-Python 3.9, pyedflib, matplotlib, librosa.display, FastICA, simpleaudio
 
 ## Información de contacto
 -est.paula.vcardenas@unimilitar.edu.co, est.sara.martin@unimilitar.edu.co, est.cristian.cmolina@unimilitar.edu.co
