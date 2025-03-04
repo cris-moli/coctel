@@ -1,7 +1,10 @@
 # Coctel
  ## Introducción
 En este trabajo desarrollaremos la práctica de “la fiesta de cóctel”, esta consiste en grabar diferentes conversaciones desde diferentes micrófonos en una reunión, en nuestro caso hicimos uso de la aplicación grabadora de voz desde los celulares, en un cuarto insonoro a una distancia de aproximadamente 2 metros cada uno de los micrófonos que se encontraban en un punto central, esto permitió la captura de tres audios guardados desde tres diferentes celulares de aproximadamente 15 segundos cada audio. 
+## Tranformada rápida de Fourier
+La Transformación rápida de Fourier, FFT para abreviar, es un importante método de medición en la tecnología de medición de audio y acústica. Descompone una señal en sus componentes espectrales individuales y así proporciona información sobre su composición. Los FFT se utilizan para el análisis de errores, el control de calidad y la monitorización de las condiciones de las máquinas o sistemas. Este artículo explica el cálculo del FFT, los parámetros relevantes y sus efectos en el resultado de la medición..
 
+Estrictamente hablando, la FFT es un algoritmo optimizado para implementar la "Transformación Discreta de Fourier", o DFT para abreviar. En este proceso, una sección limitada en el tiempo de una señal se descompone en sus componentes. Estos componentes son oscilaciones sinusoidales simples a frecuencias discretas, cuya amplitud y fase están determinadas. El FFT permite así la vista de una señal en el dominio de la frecuencia.
 ## ¿Qué es ICA?
 El análisis de componentes independientes es un método probabilístico para aprender una transformación lineal de un vector aleatorio. El objetivo es encontrar componentes que sean máximamente independientes y no gaussianos (no normales). Su diferencia fundamental con los métodos estadísticos multivariantes clásicos radica en el supuesto de no gaussianidad, lo que permite la identificación de componentes originales subyacentes, en contraste con los métodos clásicos.
 ## ¿Qué es Beamforming?
